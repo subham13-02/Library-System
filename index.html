@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <div class="nav">
+        <nav>
+            <h1>Library System</h1>
+            <div class="nav-button">
+                <a href="#books-content">Books</a>
+                <a href="#register-content">Register</a>
+                <a href="">Contact Us</a>
+                <a href="">Logout</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Book table -->
+    
+        <div class="book-table">
+            <h1 class="books-content" id="books-content">Books</h1></br>
+            <table >
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <div>
+                        <tr>
+                            <td rowspan="4">1</td>
+                            <td ><a href="h.com">Book Title 1</a></td>
+                            <td rowspan="4">Author name 1</td>
+                            <td rowspan="4">Genre 1</td>
+                            <td rowspan="4">Available</td>
+                        </tr>
+                        <tr>
+                            <td>Publish Date:2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count:250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN 123-4567890123</td>
+                        </tr>
+                    </div>
+                    
+                    <div>
+                        <tr>
+                            <td rowspan="4">2</td>
+                            <td ><a href="h.com">Book Title 2</a></td>
+                            <td rowspan="4">Author name 2</td>
+                            <td rowspan="4">Genre 2</td>
+                            <td rowspan="4">Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>Publish Date:2005</td>
+                        </tr>
+                        <tr>
+                            <td>Page count:300</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN 123-4567890456</td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td rowspan="4">3</td>
+                            <td ><a href="h.com">Book Title 3</a></td>
+                            <td rowspan="4">Author name 3</td>
+                            <td rowspan="4">Genre 3</td>
+                            <td rowspan="4">Available</td>
+                        </tr>
+                        <tr>
+                            <td>Publish Date:2010</td>
+                        </tr>
+                        <tr>
+                            <td>Page count:350</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN 123-4567890789</td>
+                        </tr>
+                    </div>
+                </tbody>
+            </table>
+        </div>
+        <!-- registration form -->
+
+
+        <div class="form">
+            <form  method="post" action="file" name="form" >
+            <h1 id="register-content">Register</h1>
+            
+            <div>
+                <label for="firstFame">First Name:</label><br>
+                <input type="text" class="f" id="firstFame" required>
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" class="f" id="lastName" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" class="f" id="dob" required>
+            </div>
+
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" min-value="5" max="100" class="f" id="age" required>
+            </div>
+            
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" class="f" id="password" required>
+            </div>
+            
+            <div>
+                <label for="password">Confirm Password:</label><br>
+                <input type="password" class="f" id="password" required>
+            </div>
+
+            <div>
+                <br><button type="submit" class="f" id="submit" >Register</button>
+            </div>
+            
+        </form></div>
+</body>
+</html>
